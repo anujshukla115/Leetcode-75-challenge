@@ -1,5 +1,11 @@
 # Day 1 - Merge Strings Alternately
 
+## Problem Link
+
+🔗 https://leetcode.com/problems/merge-strings-alternately/
+
+---
+
 ## Problem Statement
 
 You are given two strings `word1` and `word2`.
@@ -48,7 +54,7 @@ word2 = "pqr"
 
    * Add `word1[i]`
    * Add `word2[j]`
-   * Increment both pointers
+   * Increment both pointers.
 4. Append the remaining part of `word1` (if any).
 5. Append the remaining part of `word2` (if any).
 6. Return the final merged string.
@@ -109,11 +115,11 @@ The result string stores all characters from both input strings.
 
 ## Key Learnings
 
-* Introduction to the Two Pointer technique.
-* String traversal using indices.
-* Using `substr()` to extract remaining characters.
-* Importance of handling strings with different lengths.
-* Converting problem logic into code through step-by-step thinking.
+* Two Pointer Technique
+* String Traversal
+* String Manipulation
+* Using `substr()` in C++
+* Converting problem logic into code
 
 ---
 
