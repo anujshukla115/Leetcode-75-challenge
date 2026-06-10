@@ -1,0 +1,38 @@
+class Solution {
+public:
+    string reverseWords(string s) {
+        int n =s.size();
+        int i = 0;
+        string temp;
+        while(i<n)
+        {
+            while(i<n&&s[i]==' ')
+            i++;
+            while(i<n&&s[i]!=' ')
+            {
+                temp+=s[i];
+                i++;
+            }
+            while(i<n&&s[i]==' ')
+            i++;
+            if(i<n)
+            temp+=' ';
+        }
+
+        reverse(temp.begin(),temp.end());
+
+        int start=0;
+        for(int end =0; end<=temp.size();end++)
+        {
+        if(end==temp.size()||temp[end]==' ')
+        {
+            reverse(temp.begin()+start, temp.begin()+end);
+
+            start=end+1;
+        }
+
+        }
+        
+        return temp;
+    }
+};                                        
